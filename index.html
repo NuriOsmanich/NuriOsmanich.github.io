@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="stylesheet" href="src/fonts/font.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>my-project</title>
+  </head>
+  <body class="bg-amber-950 text-white [text-shadow:2px_-2px_0_#000]">
+    <header class="flex flex-col items-center">
+      <img class="h-37.5" src="./src/svg/ice_logo-svg.svg" />
+      <h1 class="font-bold text-2xl -mt-3.75">Bartenders Ice Family</h1>
+      <nav>
+        <ul class="text-[16px] text-center flex gap-2.5 mt-3.75">
+          <li><a href="#about_us">О Нас</a></li>
+          <li><a href="#catalog">Каталог</a></li>
+          <li><a href="#contacts">Контакты</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="py-10">
+      <section id="about_us " class="px-7.5 text-center">
+        <h2 class="text-[18px]">Наша История</h2>
+        <p class="mt-3.75 text-[14px]">
+          В конце XIX века, в разгар промышленной революции, молодой
+          предприниматель из Симферополя, Фарис Халилов, заметил растущий спрос
+          на чистый лёд для хранения продуктов и охлаждения напитков. В те
+          времена лёд добывали вручную из замерзших рек, но это было ненадёжно и
+          опасно. Вдохновлённый новыми технологиями холодильных машин, Морозов
+          основал в 1892 году "Bartenders Ice Family" — первую фабрику по
+          искусственному производству льда в России. Используя паровые двигатели
+          и аммиачные компрессоры, компания быстро завоевала рынок, поставляя
+          блоки льда ресторанам, больницам и мясным лавкам столицы.
+        </p>
+        <p class="mt-2.5 text-[14px]">
+          К началу XX века "Bartenders Ice Family" расширилась, внедрив
+          автоматизированные линии и расширив ассортимент до кубиков льда для
+          бытового использования. Несмотря на войны и революции, фабрика
+          пережила трудные времена, модернизируясь под советскую власть и
+          переходя на электрические системы. Сегодня, спустя более века,
+          компания остаётся лидером в производстве экологически чистого льда,
+          сохраняя традиции качества и инноваций, заложенные её основателем.
+        </p>
+      </section>
+      <section id="catalog" class="flex flex-col justify-center items-center px-7.5 text-center mt-5">
+       <h3 class="text-[18px]">Наши Работы</h3>
+       <article class="hover:scale-110">
+        <img src="./src/image/circle.png">
+        <p class="-mt-[15%]">Всем сферам сфера</p>
+        <button type="button" class="border rounded-lg p-1.25 mt-2.5 " onclick="window['dialog-id'].showModal()">Подробнее</button>
+        <dialog id="dialog-id" class="modal-dialog text-center text-shadow-none bg-transparent">
+          <div class="mt-[20%] flex flex-col justify-center items-center align-middle">
+            <p class="block">Эта сфера создана нашими мастерами из кристально чистной воды при исспользовании
+              идеальной формы, чтобы фигура была безупречна. Идеально подойдет для ваших коктейлей с подачей 'On the rocks'.
+            </p>
+            <button class="mt-7.5 border p-1.25 rounded-2xl" type="button"
+              onclick="window['dialog-id'].close()">Назад</button>
+                    </dialog>
+          </div>
+       </article>
+       <article>
+        <img>
+        <p></p>
+        <button></button>
+        <dialog></dialog>
+       </article>
+       <article>
+        <img>
+        <p></p>
+        <button></button>
+        <dialog></dialog>
+       </article>
+       <article>
+        <img>
+        <p></p>
+        <button></button>
+        <dialog></dialog>
+       </article>
+      </section>
+      <section id="contacts" class="flex flex-col justify-center items-center px-7.5 text-center mt-5">
+       <div>
+         <h4 class="text-[18px]">Заказ и Доставка</h4>
+         <p class="mt-3.75 text-[14px]">Доставка осуществляется по всему Крыму. Стоимость доставки зависит от объема заказанного вами товара либо рассчитывается индивидуально.</p>
+       </div>
+       <div class="mt-5">
+        <p>Свяжитесь с нами позвонив на наш номер телефона либо заполните форму и мы вам перезвоним!</p>
+        <div class="flex flex-col mt-5">
+          <span>Фарис: +7(978)000-00-00</span>
+          <span>Руслан: +7(978)000-00-00</span>
+        </div>
+        <form class="flex flex-col items-center mt-5 border rounded-3xl">
+          <label for="name">ФИО</label>
+          <input id="name" type="text" placeholder="Иванов Иван Иванович">
+          <label for="phone">Телефон</label>
+          <input id="phone" type="number" placeholder="+8(888)888_88_88">
+          <label for="email">Почта</label>
+          <input id="email" type="email" placeholder="ice@mail.ru">
+          <button class="mt-2.5" type="submit">Оставить заявку</button>
+        </form>
+       </div>
+      </section>
+    </main>
+    <footer class="text-center text-black text-shadow-none font-bold">
+      @19.04.2026@
+    </footer>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
