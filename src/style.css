@@ -35,10 +35,23 @@ body {
   background: rgba(0, 0, 0, 0.6);
 }
 
+.bg-layer {
+  position: fixed;
+  inset: 0;
+  background: url('/public/ice-bg.png') center/cover no-repeat;
+  z-index: -1;
+  pointer-events: none;
+}
 
 .title{
   /*font-size: clamp(24px, 30.54px + 4.92vw, 65px);*/
   font-size: clamp(24px,11px + 4.92vw,40px);
+}
+@media(max-width: 768px){
+body{
+  background-attachment: none;
+  background-size: cover;
+}
 }
 
 @media(min-width: 768px){
