@@ -4,14 +4,14 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="stylesheet" href="src/style.css" />
-    <link rel="stylesheet" href="src/fonts/font.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>my-project</title>
   </head>
   <body class="bg-amber-950 text-white [text-shadow:2px_-2px_0_#000]">
     <header class="flex flex-col items-center">
-      <img class="h-37.5" src="./src/svg/ice_logo-svg.svg" />
-      <h1 class="font-bold text-2xl -mt-3.75">Bartenders Ice Family</h1>
+      <img class="logo h-37.5" src="./src/svg/ice_logo-svg.svg" />
+      <h1 class="title font-bold text-center -mt-3.75">Bartenders Ice</h1>
+      <span class="title font-bold text-center -mt-3.75">Family</span>
       <nav>
         <ul class="text-[16px] text-center flex gap-2.5 mt-3.75">
           <li><a href="#about_us">О Нас</a></li>
@@ -44,11 +44,12 @@
           сохраняя традиции качества и инноваций, заложенные её основателем.
         </p>
       </section>
-      <section id="catalog" class="flex flex-col justify-center items-center px-7.5 text-center mt-5">
+      <section id="catalog" class="flex flex-col justify-center items-center px-7.5 text-center mt-30">
        <h3 class="text-[18px]">Наши Работы</h3>
        <article class="hover:scale-110">
-        <img src="./src/image/circle.png">
+        <img class="w-65 h-auto" src="./src/image/circle.png">
         <p class="-mt-[15%]">Всем сферам сфера</p>
+        <p>Цена: 1000 руб. за 1 шт.</p>
         <button type="button" class="border rounded-lg p-1.25 mt-2.5 " onclick="window['dialog-id'].showModal()">Подробнее</button>
         <dialog id="dialog-id" class="modal-dialog text-center text-shadow-none bg-transparent">
           <div class="mt-[20%] flex flex-col justify-center items-center align-middle">

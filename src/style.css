@@ -8,7 +8,7 @@
 
 body {
   margin: 0;
-  font-family: 'BricolageGrotesque_24pt_Condensed-Bold', sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   background-image: url(/src/image/ice-bg.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -35,3 +35,20 @@ body {
   background: rgba(0, 0, 0, 0.6);
 }
 
+
+.title{
+  /*font-size: clamp(24px, 30.54px + 4.92vw, 65px);*/
+  font-size: clamp(24px,11px + 4.92vw,40px);
+}
+
+@media(min-width: 768px){
+ .logo{
+   height: 200px;
+ }
+}
+
+@media(min-width: 1440px){
+ .logo{
+   height: 300px;
+ }
+}
