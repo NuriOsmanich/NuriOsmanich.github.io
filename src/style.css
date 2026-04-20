@@ -47,14 +47,10 @@ body {
   /*font-size: clamp(24px, 30.54px + 4.92vw, 65px);*/
   font-size: clamp(24px,11px + 4.92vw,40px);
 }
-@media(max-width: 420px){
+@media(max-width: 768px){
 body{
   background-attachment: none;
   background-size: cover;
-
-}
-.bg-layer{
-  transform: translateX(-40px);
 }
 }
 
